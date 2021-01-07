@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Alamofire
 
 class SignUpViewController: UIViewController {
+    let headers = ["Content-Type":"application/json"];
+    let parameter = ["MemberID": "aaaa@test.com", "MemberPW": "12345", "LoginType": "IDPW", "PushKey": "ios"];
 
     
     @IBOutlet weak var txtFieldEmail: UITextField!
@@ -28,7 +31,18 @@ class SignUpViewController: UIViewController {
     
 
     @IBAction func onClickSignup(_ sender: Any) {
-        // Do Signup Validation
+//        // Do Signup Validation
+//        Almofire.
+        
+//        Alamofire.request(loginApi, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: headers)
+//            .responseJSON { (response) in
+//                switch response.result {
+//                case .success:
+//                    print("success",response)
+//                case .failure(let error):
+//                    print("failure",error)
+//                }
+//        }
     }
     
     
